@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Canvas */
+#canvas {
+    position: relative;
+    border: 2px solid #000;
+    margin-inline: auto;
+}
+
+/* place to put items */
+.place {
+    position: absolute;
+    left: 50px;
+
+    border: 2px solid #000;
+}
+
+#compare-place1 {
+    top: 10px;
+    left: 50px;
+}
+
+#compare-button {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 80px;
+}
+
+#compare-place2 {
+    top: 10px;
+    left: 250px;
+}
+
+#final1, #final2, #final3, #final4, #final5 {
+    position: absolute;
+    bottom: 10px;
+}
+
+#final1 {
+    left: 10px;
+}
+
+#final2 {
+    left: 110px;
+}
+
+#final3 {
+    left: 210px;
+}
+
+#final4 {
+    left: 310px;
+}
+
+#final5 {
+    left: 410px;
+}
+
+/* dragable items */
+.dragable {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196f3;
+    color: #fff;
+    box-sizing: border-box;
+    top: 150px;
+}
+
+#item1 {
+    left: 0;
+}
+
+#item2 {
+    left: 75px;
+}
+
+#item3 {
+    left: 150px;
+}
+
+#item4 {
+    left: 225px;
+}
+
+#item5 {
+    left: 300px;
+}
