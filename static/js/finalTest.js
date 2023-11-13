@@ -22,6 +22,8 @@ finalButton.addEventListener("click", function () {
   }
   for (let i = 0; i < final_items.length - 1; i++) {
     if (final_items[i] > final_items[i + 1]) {
+      increment();
+
       finalText.innerText =
         "Fehler: Das Element in " +
         finals[i].innerText +

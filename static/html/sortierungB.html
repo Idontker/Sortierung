@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <script src="static/js/confetti.min.js" defer></script>
+    <script src="static/js/dragNdrop.js" defer></script>
+    <script src="static/js/inside.js" defer></script>
+    <script src="static/js/compare.js" defer></script>
+    <script src="static/js/finalTest.js" defer></script>
+    <script src="static/js/main.js" defer></script>
+  </head>
+  <body>
+    <button id="verwirrt">haaaaa</button>
+
+    <div id="canvas">
+      <div id="item1" class="dragable" data-value="A" data-name="Item A">
+        Item A
+      </div>
+      <div id="item2" class="dragable" data-value="B" data-name="Item B">
+        Item B
+      </div>
+      <div id="item3" class="dragable" data-value="C" data-name="Item C">
+        Item C
+      </div>
+      <div id="item4" class="dragable" data-value="D" data-name="Item D">
+        Item D
+      </div>
+      <div id="item5" class="dragable" data-value="E" data-name="Item E">
+        Item E
+      </div>
+
+      <div id="compare-place1" class="place">[1]</div>
+      <button id="compare-button">Vergleiche</button>
+      <div id="compare-place2" class="place">[2]</div>
+
+      <div id="final1" class="place final">[f-1]</div>
+      <div id="final2" class="place final">[f-2]</div>
+      <div id="final3" class="place final">[f-3]</div>
+      <div id="final4" class="place final">[f-4]</div>
+      <div id="final5" class="place final">[f-5]</div>
+    </div>
+    <div style="display: flex">
+      Antwort des Vergleichers:
+      <div id="antwort">-</div>
+    </div>
+
+    <div style="display: flex">
+      Finale Antwort:
+      <div id="final-test-text">: ausstehend</div>
+    </div>
+    <button id="final-test">Prüfe, ob richtig.</button>
+    <p id="final-test-text">Gesamtanzahl an Vergleichen: <b> 5</b></p>
+  </body>
+</html>

@@ -20,6 +20,8 @@ function vergleiche() {
     label1 = ele1[0].getAttribute("data-name");
     label2 = ele2[0].getAttribute("data-name");
 
+    increment();
+
     if (val1 < val2) {
       antwort.innerText = `${label1} ist kleiner als das Elemnent in ${label2}.`;
       // antwort.innerText = "Die Elemente in [1] und [2] sind gleichwertig.";
@@ -35,3 +37,11 @@ function vergleiche() {
 compareButton.addEventListener("click", function () {
   vergleiche();
 });
+
+function increment() {
+  let anzVergleiche = document.getElementById("anzVergleiche");
+  let val = parseInt(anzVergleiche.getAttribute("data-value"));
+  val++;
+  anzVergleiche.setAttribute("data-value", val);
+  anzVergleiche.innerText = val;
+}

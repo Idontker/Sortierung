@@ -1,18 +1,8 @@
 function richtig() {
-  // Pass in the id of an element
-  let confetti = new Confetti("verwirrt");
-
-  // Edit given parameters
-  confetti.setCount(75);
-  confetti.setSize(1);
-  confetti.setPower(25);
-  confetti.setFade(false);
-  confetti.destroyTarget(true);
+  var confettiSettings = { target: "confetti-canvas", start_from_edge: true };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
 }
-document.getElementById("verwirrt").addEventListener("click", function () {
-  console.log("done");
-  richtig();
-});
 
 CANVAS_HEIGHT = 400;
 CANVAS_WIDTH = 700;

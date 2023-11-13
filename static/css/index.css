@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: large;
+    padding: 0.5rem 1rem;
+    background-color: lightblue;
+    color: black;
+}
