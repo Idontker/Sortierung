@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/minimum.css" />
+    <script src="../js/confetti-js.js" defer></script>
+    <script src="../js/dragNdrop.js" defer></script>
+    <script src="../js/inside.js" defer></script>
+    <script src="../js/compare.js" defer></script>
+    <script src="../js/finalMinimum.js" defer></script>
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <a href="../../index.html"><button>home</button></a>
+    <canvas id="confetti-canvas"> </canvas>
+    <h1>Bestimme das kleinste Element:</h1>
+
+    <div style="display: flex">
+      Antwort des Vergleichers:
+      <div id="antwort">-</div>
+    </div>
+    <div>
+      Gesamtanzahl an Vergleichen: <b id="anzVergleiche" data-value="0"> 0</b>
+    </div>
+
+    <div id="canvas">
+      <div id="item1" class="dragable" data-value="6" data-name="Item A">
+        Item A
+      </div>
+      <div id="item2" class="dragable" data-value="3" data-name="Item B">
+        Item B
+      </div>
+      <div id="item3" class="dragable" data-value="0" data-name="Item C">
+        Item C
+      </div>
+      <div id="item4" class="dragable" data-value="2" data-name="Item D">
+        Item D
+      </div>
+      <div id="item5" class="dragable" data-value="1" data-name="Item E">
+        Item E
+      </div>
+
+      <div id="compare-place1" class="place">[1]</div>
+      <button id="compare-button">Vergleiche</button>
+      <div id="compare-place2" class="place">[2]</div>
+
+      <div id="final-minimum" class="place final">[f-1]</div>
+    </div>
+
+    <div style="display: flex">
+      Finale Antwort:
+      <div id="final-test-text">ausstehend</div>
+    </div>
+    <button id="final-test">Prüfe, ob richtig.</button>
+  </body>
+</html>
