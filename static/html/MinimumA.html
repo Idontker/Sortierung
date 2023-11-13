@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/minimum.css" />
     <script src="../js/confetti-js.js" defer></script>
     <script src="../js/dragNdrop.js" defer></script>
     <script src="../js/inside.js" defer></script>
     <script src="../js/compare.js" defer></script>
-    <script src="../js/finalTest.js" defer></script>
+    <script src="../js/finalMinimum.js" defer></script>
     <script src="../js/main.js" defer></script>
   </head>
   <body>
     <a href="../../index.html"><button>home</button></a>
     <canvas id="confetti-canvas"> </canvas>
-    <h1>Soritere die Elemente aufsteigend:</h1>
+    <h1>Bestimme das kleinste Element:</h1>
 
     <div style="display: flex">
       Antwort des Vergleichers:
@@ -25,19 +26,19 @@
     </div>
 
     <div id="canvas">
-      <div id="item1" class="dragable" data-value="20" data-name="Item A">
+      <div id="item1" class="dragable" data-value="3" data-name="Item A">
         Item A
       </div>
-      <div id="item2" class="dragable" data-value="5" data-name="Item B">
+      <div id="item2" class="dragable" data-value="4" data-name="Item B">
         Item B
       </div>
-      <div id="item3" class="dragable" data-value="4" data-name="Item C">
+      <div id="item3" class="dragable" data-value="0" data-name="Item C">
         Item C
       </div>
-      <div id="item4" class="dragable" data-value="19" data-name="Item D">
+      <div id="item4" class="dragable" data-value="6" data-name="Item D">
         Item D
       </div>
-      <div id="item5" class="dragable" data-value="50" data-name="Item E">
+      <div id="item5" class="dragable" data-value="9" data-name="Item E">
         Item E
       </div>
 
@@ -45,16 +46,12 @@
       <button id="compare-button">Vergleiche</button>
       <div id="compare-place2" class="place">[2]</div>
 
-      <div id="final1" class="place final">[f-1]</div>
-      <div id="final2" class="place final">[f-2]</div>
-      <div id="final3" class="place final">[f-3]</div>
-      <div id="final4" class="place final">[f-4]</div>
-      <div id="final5" class="place final">[f-5]</div>
+      <div id="final-minimum" class="place final">[f-1]</div>
     </div>
 
     <div style="display: flex">
       Finale Antwort:
-      <div id="final-test-text">: ausstehend</div>
+      <div id="final-test-text">ausstehend</div>
     </div>
     <button id="final-test">Prüfe, ob richtig.</button>
   </body>

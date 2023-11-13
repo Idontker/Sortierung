@@ -3,33 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/css/main.css" />
-    <script src="static/js/confetti.min.js" defer></script>
-    <script src="static/js/dragNdrop.js" defer></script>
-    <script src="static/js/inside.js" defer></script>
-    <script src="static/js/compare.js" defer></script>
-    <script src="static/js/finalTest.js" defer></script>
-    <script src="static/js/main.js" defer></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/confetti-js.js" defer></script>
+    <script src="../js/dragNdrop.js" defer></script>
+    <script src="../js/inside.js" defer></script>
+    <script src="../js/compare.js" defer></script>
+    <script src="../js/finalTest.js" defer></script>
+    <script src="../js/main.js" defer></script>
   </head>
   <body>
-    <button id="verwirrt">haaaaa</button>
+    <a href="../../index.html"><button>home</button></a>
+    <canvas id="confetti-canvas"> </canvas>
+    <h1>Soritere die Elemente aufsteigend:</h1>
+
+    <div style="display: flex">
+      Antwort des Vergleichers:
+      <div id="antwort">-</div>
+    </div>
+    <div>
+      Gesamtanzahl an Vergleichen: <b id="anzVergleiche" data-value="0"> 0</b>
+    </div>
 
     <div id="canvas">
-      <div id="item1" class="dragable" data-value="A" data-name="Item A">
-        Item A
-      </div>
-      <div id="item2" class="dragable" data-value="B" data-name="Item B">
-        Item B
-      </div>
-      <div id="item3" class="dragable" data-value="C" data-name="Item C">
-        Item C
-      </div>
-      <div id="item4" class="dragable" data-value="D" data-name="Item D">
-        Item D
-      </div>
-      <div id="item5" class="dragable" data-value="E" data-name="Item E">
-        Item E
-      </div>
+      <div id="item1" class="dragable" data-value="3" data-name=" 3">3</div>
+      <div id="item2" class="dragable" data-value="2" data-name=" 2">2</div>
+      <div id="item3" class="dragable" data-value="-1" data-name="-1">-1</div>
+      <div id="item4" class="dragable" data-value="9" data-name="9">9</div>
+      <div id="item5" class="dragable" data-value="5" data-name="5">5</div>
 
       <div id="compare-place1" class="place">[1]</div>
       <button id="compare-button">Vergleiche</button>
@@ -41,16 +41,11 @@
       <div id="final4" class="place final">[f-4]</div>
       <div id="final5" class="place final">[f-5]</div>
     </div>
-    <div style="display: flex">
-      Antwort des Vergleichers:
-      <div id="antwort">-</div>
-    </div>
 
     <div style="display: flex">
       Finale Antwort:
-      <div id="final-test-text">: ausstehend</div>
+      <div id="final-test-text">ausstehend</div>
     </div>
     <button id="final-test">Prüfe, ob richtig.</button>
-    <p id="final-test-text">Gesamtanzahl an Vergleichen: <b> 5</b></p>
   </body>
 </html>

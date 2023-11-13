@@ -23,13 +23,13 @@ function vergleiche() {
     increment();
 
     if (val1 < val2) {
-      antwort.innerText = `${label1} ist kleiner als das Elemnent in ${label2}.`;
+      antwort.innerText = `${label1} ist kleiner als ${label2}.`;
       // antwort.innerText = "Die Elemente in [1] und [2] sind gleichwertig.";
     } else if (val1 == val2) {
       antwort.innerText = `${label1} und ${label2} sind gleichwertig.`;
       //   antwort.innerText = "Die Elemente in [1] und [2] sind gleichwertig.";
     } else {
-      antwort.innerText = `${label1} ist größer als das Elemnent in ${label2}.`;
+      antwort.innerText = `${label1} ist größer als ${label2}.`;
       //   antwort.innerText = "Element in [1] ist größer als das Elemnent in [2].";
     }
   }
