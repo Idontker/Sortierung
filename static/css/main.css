@@ -46,23 +46,23 @@ body {
 }
 
 #final1 {
-    left: 10px;
-}
-
-#final2 {
     left: 110px;
 }
 
-#final3 {
+#final2 {
     left: 210px;
 }
 
-#final4 {
+#final3 {
     left: 310px;
 }
 
-#final5 {
+#final4 {
     left: 410px;
+}
+
+#final5 {
+    left: 510px;
 }
 
 /* dragable items */
